@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-    <name>celction1</name>
+
+    <name>celection1</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
