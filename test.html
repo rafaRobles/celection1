@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+</head>
+<body>
+
+<button onclick="test()">test</button>
+
+<button onclick="testImg()">test imagen</button>
+
+<div id="test">
+	
+</div>
+
+<div id="resp"></div>
+
+<img  id="img" src="">
+
+</body>
+
+
+<script>
+
+	function test()
+	{
+		ajax = new XMLHttpRequest();
+		ajax.open('GET','http://celection.esy.es/getUsers.php',true);
+		//ajax.open('GET','localhost/celection/getUsers.php',true);
+		//ajax.open('GET','getEquipos.php',true);
+		ajax.setRequestHeader("Content-type", "application/json; charset=utf-8");
+		ajax.setRequestHeader("Data-type", "jsonp");
+		//ajax.setRequestHeader("Access-Control-Allow-Origin");
+		ajax.send();
+		ajax.onreadystatechange = function(){
+			if(ajax.readyState == 4 && ajax.status==200){
+						document.getElementById('test').innerHTML = ajax.responseText;
+						//document.getElementById('resp').innerHTML = "funciono";
+						
+						datos =JSON.parse(ajax.responseText)
+						console.log(datos)
+			}
+		}
+
+	}
+
+	function testImg()
+	{
+		ajax = new XMLHttpRequest();
+		//ajax.open('GET','http://celection.esy.es/getUsers.php',true);
+		//ajax.open('GET','localhost/celection/getUsers.php',true);
+		ajax.open('GET','getIMG.php',true);
+		ajax.setRequestHeader("Content-type", "application/json; charset=utf-8");
+		ajax.setRequestHeader("Data-type", "jsonp");
+		//ajax.setRequestHeader("Access-Control-Allow-Origin");
+		ajax.send();
+		ajax.onreadystatechange = function(){
+			if(ajax.readyState == 4 && ajax.status==200){
+						//document.getElementById('test').innerHTML = ajax.responseText;
+						//document.getElementById('resp').innerHTML = "funciono";
+						
+						datos =JSON.parse(ajax.responseText)
+						console.log(datos)
+						document.getElementById('img').src = datos.image
+						
+			}
+		}
+	}
+
+
+</script>
+</html>

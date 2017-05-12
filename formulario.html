@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="android_asset/estilosFormulario.css">
+	<script src="android_asset/funcionesFormulario.js"></script>
+</head>
+<body>
+
+	<div class="fondo">
+		
+	</div>
+
+
+	<div class="content">
+		<div class="header">
+		<p>gg</p>
+		</div>
+		<div class="formulario">
+
+			<div class="inputClass">
+				<h4>Con cuanto presupuesto cuentas?</h4>
+				<input type="text" name="presupuesto" placeholder="presupuesto" required="true" id="presupuesto">
+			</div>
+
+			<div class="inputClass">
+				<h4>De que calidad quieres la camara?</h4>
+
+				<div class="option">
+					<p>Muy buena calidad</p>
+					<input type="radio" name="camara" placeholder="camara" value="muy buena" id="calidad1">					
+				</div>
+				<div class="option">
+					<p>Buena calidad</p>
+					<input type="radio" name="camara" placeholder="camara" value="buena" id="calidad2">
+					
+				</div>
+				<div class="option">
+					<p>Caidad regular</p>
+					<input type="radio" name="camara" placeholder="camara" value="regular" id="calidad3">
+				</div>
+
+
+
+			</div>
+
+			<div class="inputClass">
+
+				<h4>Quieres con mucha memoria ?</h4>
+
+				<div class="option">
+					<p>Mucha memoria</p>
+					<input type="radio" name="memoria" placeholder="presupuesto" value="alta" id="memoria1">
+				</div>
+
+				<div class="option">
+					<p>Capacidad Media</p>
+					<input type="radio" name="memoria" placeholder="presupuesto" value="media" id="memoria2">
+				</div>
+
+				<div class="option">
+					<p>Poca memoria</p>
+					<input type="radio" name="memoria" placeholder="presupuesto" value="regular" id="memoria3">
+				</div>
+
+			</div>
+
+			<div class="inputClass">
+				<h4>Cuanto desempeño quieres que tenga?</h4>
+
+				<div class="option">
+					<p>Alto Desempeño</p>
+					<input type="radio" name="desempeño" placeholder="presupuesto" value="alta" id="desempeño1">
+				</div>
+
+				<div class="option">
+					<p>Mediano Desempeño</p>
+					<input type="radio" name="desempeño" placeholder="presupuesto" value="media" id="desempeño2">
+				</div>
+
+				<div class="option">
+					<p>Desempeño Regular</p>
+					<input type="radio" name="desempeño" placeholder="presupuesto" value="baja" id="desempeño3">
+				</div>
+
+			</div>
+
+			<div class="inputClass">
+				<button onclick="sendDatos()">Busca Tu Equipo</button>
+			</div>
+
+
+
+		</div>
+	</div>
+
+</body>
+</html>

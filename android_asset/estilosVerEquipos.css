@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+		font-family: 'Roboto', sans-serif;
+}
+
+
+.fondo{
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+
+.content{
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+.header{
+	float: left;
+	position: absolute;
+	background: red;
+	width: 100%;
+	height: 5%;
+}
+
+.contenido{
+	float: left;
+	position: relative;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 10%;
+}
+
+.equipo{
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 50%;
+	background: green;
+	margin-top: 1%;
+}
+
+.imagen{
+	float: left;
+	position: relative;
+	width: 40%;
+	height: 80%;
+	background: blue;
+}
+
+.imagen>img{
+	float: left;
+	position: relative;
+	width: 90%;
+	height: 90%;
+	margin-top: 5%;
+	margin-right: 5%;
+}
+
+.infoEquipo{
+	float: right;
+	position: relative;
+	width: 60%;
+	height: 80%;
+	background: yellow;
+}
+
+.infoEquipo>p{
+	float: left;
+	position:relative;
+	width: 50%;
+	font-size: 22px;
+
+}

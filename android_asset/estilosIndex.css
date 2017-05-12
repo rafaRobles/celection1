@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.fondo{
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.fondo>img{
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.contenido{
+	float: left;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.header{
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 5%;
+}
+.content{
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 95%;
+}
+
+.seccion{
+	float: left;
+	position: relative;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 5%;
+	width: 60%;
+	height: 10%;
+	background: red;
+}
+
+.seccion>button{
+	float: left;
+	width: 50%;
+	height: 70%;
+	border-radius: 6px;
+	border:none;
+	margin-left: 25%;
+	margin-right: 25%;
+	font-size: 30px;
+	color: white;
+	background: blue;
+}

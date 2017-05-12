@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.fondo{
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #FAFFA1;
+}
+
+.content{
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+
+.header{
+	float: left;
+	position:fixed;
+	width: 100%;
+	height: 5%;
+	background: red;
+}
+
+.formulario{
+	float: left;
+	position: absolute;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 90%;
+	margin-top: 10%;
+}
+
+.inputClass{
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 15%;
+	text-align: center;
+}
+
+.inputClass>h4{
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 26%;
+	font-size: 35px;
+}
+
+.inputClass>input[type="text"]{
+	float: left;
+	position: relative;
+	width: 80%;
+	height: 30%;
+	border-radius: 8px;
+	border:none;
+	margin-right: 10%;
+	margin-left: 10%;
+	font-size: 30px;
+}
+
+
+.option{
+	float: left;
+	position: relative;
+	width:33.33% ;
+	height: 40%;
+	background: red;
+}
+
+
+
+.option>p{
+	float: left;
+	position: relative;
+	width: 90%;
+	height: 50%;
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: 29px;
+	background: blue;
+}
+
+
+.option>input[type="radio"]{
+	float: left;
+	position: relative;
+	width: 40%;
+	height: 35%;
+	border-radius: 6px;
+	border:none;
+	margin-right: 30%;
+	margin-left: 30%;
+}
+
+
+.inputClass>button{
+	float: left;
+	position: relative;
+	width: 50%;
+	height: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	border:none;
+	border-radius: 8px;
+	font-size: 25px;
+}
+
+

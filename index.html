@@ -1,96 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>test</title>
+	<title>Celection</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="android_asset/estilosIndex.css">
+	<script src="android_asset/funcionesIndex.js"></script>
 </head>
 <body>
 
-<button onclick="test()">test</button>
+	<div class="fondo">
 
-<div id="test"></div>
+	</div>
+
+	<div class="contenido">
+		<div class="header">
+			
+		</div>
+
+		<div class="content">
+			<div class="seccion">
+				<button onclick="ingresar()">Ingresar</button>
+				
+			</div>
+
+			<div class="seccion">
+				<button onclick="verEquipos()">Ver Todos los Equipos</button>
+				
+			</div>
+		</div>
+	</div>
 
 </body>
-
-
-<script>
-
-	function test()
-	{
-		ajax = new XMLHttpRequest();
-		ajax.open('GET','http://celection.esy.es/getUsers.php',true);
-		//ajax.open('GET','localhost/celection/getUsers.php',true);
-		ajax.setRequestHeader("Content-type", "application/json; charset=utf-8");
-		ajax.setRequestHeader("Data-type", "jsonp");
-		//ajax.setRequestHeader("Access-Control-Allow-Origin");
-		ajax.send();
-		ajax.onreadystatechange = function(){
-			if(ajax.readyState == 4 && ajax.status==200){
-				if(ajax.responseText != ""){
-						document.getElementById('test').innerHTML = ajax.responseText;
-				}
-			}
-		}
-
-	}
-
-
-/*
-
-  var isIE8 = window.XDomainRequest ? true : false;
-  var invocation = createCrossDomainRequest();
-  //var url = 'https://leggetter-cors.herokuapp.com/';
-  var url = 'http://celection.esy.es/getUsers.php';
-  function createCrossDomainRequest(url, handler) {
-    var request;
-    if (isIE8) {
-      request = new window.XDomainRequest();
-      }
-      else {
-        request = new XMLHttpRequest();
-      }
-    return request;
-  }
-
-  function callOtherDomain() {
-    if (invocation) {
-      if(isIE8) {
-        invocation.onload = outputResult;
-        invocation.open("GET", url, true);
-        invocation.send();
-      }
-      else {
-        invocation.open('GET', url, true);
-        invocation.onreadystatechange = handler;
-        invocation.send();
-      }
-    }
-    else {
-      var text = "No Invocation TookPlace At All";
-      var textNode = document.createTextNode(text);
-      var textDiv = document.getElementById("textDiv");
-      textDiv.appendChild(textNode);
-    }
-  }
-
-  function handler(evtXHR) {
-    if (invocation.readyState == 4)
-    {
-      if (invocation.status == 200) {
-          outputResult();
-      }
-      else {
-        alert("Invocation Errors Occured");
-      }
-    }
-  }
-
-  function outputResult() {
-    var response = invocation.responseText;
-    var textDiv = document.getElementById("textDiv");
-    textDiv.innerHTML += response;
-  }
-
-*/
-
-</script>
 </html>
