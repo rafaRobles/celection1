@@ -15,6 +15,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	filter: blur(3px);
 }
 
 .contenido{
@@ -28,35 +29,46 @@
 	float: left;
 	position: relative;
 	width: 100%;
-	height: 5%;
+	height: 15%;
+}
+
+.header>img{
+	float: left;
+	position: relative;
+	width: 80%;
+	height: 100%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 .content{
 	float: left;
 	position: relative;
-	width: 100%;
-	height: 95%;
+	width: 90%;
+	height: 80%;
+	margin-top: 20%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .seccion{
 	float: left;
 	position: relative;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-top: 5%;
-	width: 60%;
-	height: 10%;
-	background: red;
+	width: 90%;
+	height: 20%;
 }
 
 .seccion>button{
 	float: left;
 	width: 50%;
-	height: 70%;
-	border-radius: 6px;
+	height: 55%;
+	border-radius: 30px;
 	border:none;
 	margin-left: 25%;
 	margin-right: 25%;
 	font-size: 30px;
-	color: white;
-	background: blue;
+	color: #E6F0F6;
+	background: #187DC2;
 }
