@@ -62,13 +62,13 @@
 
 .seccion>button{
 	float: left;
-	width: 50%;
-	height: 55%;
+	width: 60%;
+	height: 76%;
 	border-radius: 30px;
 	border:none;
-	margin-left: 25%;
-	margin-right: 25%;
-	font-size: 30px;
+	margin-left: 20%;
+	margin-right: 20%;
+	font-size: 25px;
 	color: #E6F0F6;
 	background: #187DC2;
 }

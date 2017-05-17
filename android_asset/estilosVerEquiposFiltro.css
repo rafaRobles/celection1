@@ -1,7 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
-		font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 
@@ -15,17 +15,42 @@
 
 .content{
 	float: left;
-	position: relative;
+	position: absolute;
 	width: 100%;
+	height: 100%;
 }
+
 
 .header{
 	float: left;
-	position: absolute;
-	background: red;
+	position: relative;
 	width: 100%;
-	height: 5%;
+	height: 10%;
 }
+
+.header>img{
+	float: left;
+	position: relative;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 80%;
+
+}
+
+.header>h4{
+	float: left;
+	position: relative;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 20%;
+	text-align: center;
+	font-size: 30px;
+	color: #ADADAD;
+}
+
+
 
 .contenido{
 	float: left;
@@ -33,47 +58,62 @@
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
-	margin-top: 10%;
+	margin-top: 3%;
 }
 
 .equipo{
 	float: left;
 	position: relative;
-	width: 100%;
-	height: 50%;
-	background: green;
-	margin-top: 1%;
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+	height: 40%;
+	background: #187DC2;
+	margin-top: 3%;
+	border-radius: 20px;
 }
 
 .imagen{
 	float: left;
 	position: relative;
-	width: 40%;
-	height: 80%;
-	background: blue;
+	width: 100%;
+	height: 10%;
+	margin-top: 3%;
+
 }
 
 .imagen>img{
-	float: left;
 	position: relative;
-	width: 90%;
-	height: 90%;
-	margin-top: 5%;
-	margin-right: 5%;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	max-height: 300px;
 }
 
 .infoEquipo{
-	float: right;
+	float: left;
 	position: relative;
-	width: 60%;
-	height: 80%;
-	background: yellow;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 60%;
 }
 
-.infoEquipo>p{
+.pEstatico{
 	float: left;
-	position:relative;
+	position: relative;
 	width: 50%;
-	font-size: 22px;
+	height: 9%;
+	font-size: 20px;
+	color: #D4D4D4;
+}
+
+.pDinamico{
+	float: left;
+	position: relative;
+	width: 50%;
+	height: 9%;
+	font-size: 20px;
+	color: #D4D4D4;
 
 }
