@@ -17,7 +17,7 @@ function selectEquipos()
 	valores = 'getEquiposFiltro.php?presupuesto='+presupuesto+'&calidadCamara='+calidadCamara+"&memoria="+memoria+"&desempeño="+desempeno
 	console.log(valores)
 		ajax = new XMLHttpRequest();
-		ajax.open('GET',valores,true);
+		ajax.open('GET','http://celection.esy.es/'+valores,true);
 		ajax.setRequestHeader("Content-type", "application/json; charset=utf-8");
 		ajax.setRequestHeader("Data-type", "jsonp");
 		//ajax.setRequestHeader("Access-Control-Allow-Origin");
