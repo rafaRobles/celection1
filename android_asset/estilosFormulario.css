@@ -12,6 +12,14 @@
 	background: #E1E1E1;
 }
 
+.fondo>img{
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	filter: blur(3px);
+}
+
 
 .content{
 	float: left;
@@ -54,7 +62,7 @@
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
-	height: 10%;
+	height: 15%;
 	margin-top: 3%;
 	background: #187DC2;
 	border-radius: 25px;
@@ -118,11 +126,12 @@
 	width: 50%;
 	margin-left: 25%;
 	margin-right: 25%;
+	margin-top: 3%;
 	height: 30%;
-	border-radius: 10px;
+	border-radius: 12px;
 	font-size: 20px;
 	color: white;
-	background: #187DC2;
+	background: #E88B0C;
 	
 }
 

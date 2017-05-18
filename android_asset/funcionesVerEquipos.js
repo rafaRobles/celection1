@@ -5,7 +5,7 @@ function selectAllEquipos()
 		ajax = new XMLHttpRequest();
 		//ajax.open('GET','http://celection.esy.es/getUsers.php',true);
 		//ajax.open('GET','localhost/celection/getUsers.php',true);
-		ajax.open('GET','http://celection.esy.es/getEquipos.php',true);
+		ajax.open('GET','getEquipos.php',true);
 		ajax.setRequestHeader("Content-type", "application/json; charset=utf-8");
 		ajax.setRequestHeader("Data-type", "jsonp");
 		//ajax.setRequestHeader("Access-Control-Allow-Origin");

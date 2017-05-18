@@ -7,10 +7,19 @@
 
 .fondo{
 	float: left;
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 }
+
+.fondo>img{
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	filter: blur(3px);
+}
+
 
 
 .content{
@@ -52,18 +61,16 @@
 .contenido{
 	float: left;
 	position: relative;
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-top: 3%;
 }
 
 .equipo{
 	float: left;
 	position: relative;
-	width: 80%;
-	margin-right: 10%;
-	margin-left: 10%;
+	width: 100%;
 	height: 40%;
 	background: #187DC2;
 	margin-top: 3%;
@@ -101,7 +108,7 @@
 	position: relative;
 	width: 50%;
 	height: 9%;
-	font-size: 20px;
+	font-size: 15px;
 	color: #D4D4D4;
 }
 
@@ -110,7 +117,7 @@
 	position: relative;
 	width: 50%;
 	height: 9%;
-	font-size: 20px;
+	font-size: 15px;
 	color: #D4D4D4;
 
 }
