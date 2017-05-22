@@ -55,7 +55,7 @@
 	height: 20%;
 	text-align: center;
 	font-size: 30px;
-	color: #ADADAD;
+	color: #F5930E;
 }
 
 .contenido{
@@ -92,6 +92,7 @@
 	margin-left: 10%;
 	margin-right: 10%;
 	max-height: 300px;
+	border-radius: 10px;
 }
 
 .infoEquipo{

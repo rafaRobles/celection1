@@ -12,22 +12,25 @@ function selectEquipos()
 	presupuesto = localStorage.getItem('presupuesto')
 	calidadCamara = localStorage.getItem('calidadCamara')
 	memoria = localStorage.getItem('memoria')
-	desempeño = localStorage.getItem('desempeño')
+	desempeno = localStorage.getItem('desempeño')
+
 
 	valores = 'getEquiposFiltro.php?presupuesto='+presupuesto+'&calidadCamara='+calidadCamara+"&memoria="+memoria+"&desempeño="+desempeno
 	console.log(valores)
 		ajax = new XMLHttpRequest();
 		ajax.open('GET','http://celection.esy.es/'+valores,true);
+		//ajax.open('GET',valores,true);
 		ajax.setRequestHeader("Content-type", "application/json; charset=utf-8");
 		ajax.setRequestHeader("Data-type", "jsonp");
 		//ajax.setRequestHeader("Access-Control-Allow-Origin");
 		ajax.send();
-		ajax.onreadystatechange = function()
-{			if(ajax.readyState == 4 && ajax.status==200){
+		ajax.onreadystatechange = function(){			
+			if(ajax.readyState == 4 && ajax.status==200){
 					data =JSON.parse(ajax.responseText)
 					console.log(data)
 					var mostrarDatos ="";
 
+					
 					for (var i = 0; i < data.valores.length; i++)
 					{
 					mostrarDatos +=	'<div class="equipo">'+
@@ -49,6 +52,7 @@ function selectEquipos()
 										'</div>'+	
 									'</div>'		
 					}
+					
 					//console.log(mostrarDatos)
 					document.getElementById('contenido').innerHTML = mostrarDatos
 			}

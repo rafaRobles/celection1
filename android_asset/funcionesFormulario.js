@@ -5,7 +5,18 @@ function sendDatos()
 	var memoria ="";
 	var desempeño = "";
 
-	presupuesto = document.getElementById('presupuesto').value;
+	if(document.getElementById('presupuesto1').checked == true)
+	{
+		presupuesto = document.getElementById('presupuesto1').value 
+	}
+	else if(document.getElementById('presupuesto2').checked == true)
+	{
+		presupuesto = document.getElementById('presupuesto2').value 
+	}
+	else if (document.getElementById('presupuesto3').checked == true)
+	{
+		presupuesto = document.getElementById('presupuesto3').value 
+	}
 
 
 	if(document.getElementById('calidad1').checked == true)
@@ -49,6 +60,16 @@ function sendDatos()
 	}
 
 
+
+	
+	if(presupuesto=="" || calidadCamara =="" || memoria =="" || desempeño == "" )
+	{
+		document.getElementById('bg2').style.display = "block"
+		document.getElementById('msj2').style.display = "block"
+		return
+	}
+
+
 	//console.log(presupuesto)
 	//console.log(calidadCamara)
 	//console.log(memoria)
@@ -59,7 +80,7 @@ function sendDatos()
 	localStorage.setItem('memoria' , memoria)
 	localStorage.setItem('desempeño', desempeño)
 
-	console.log(localStorage.getItem('presupuesto'))
+	console.log(localStorage.getItem('desempeño'))
 
 	window.location.href='verEquiposFiltro.html'
 

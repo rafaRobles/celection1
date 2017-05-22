@@ -8,8 +8,14 @@
 </head>
 <body>
 
+	<div id="bg2"></div>
+	<div id="msj2">
+		<h1>Debes de llenar todos los campos</h1>
+		<a href="formulario.html" class="boton">Aceptar</a>
+	</div>
+
 	<div class="fondo">
-		<img src="img/fondo.jpg">
+		<img src="img/fondo2.jpg">
 	</div>
 
 
@@ -20,24 +26,42 @@
 		<div class="formulario">
 
 			<div class="inputClass">
-				<h4>Con cuanto presupuesto cuentas?</h4>
-				<input type="text" name="presupuesto" placeholder="presupuesto" required="true" id="presupuesto">
+				<h4>¿Con cuánto presupuesto cuentas?</h4>
+
+				<div class="option">
+					<p>De 6000 en adelante</p>
+					<input type="radio" name="presupuesto" placeholder="presupuesto" value="muchoDinero" id="presupuesto3">
+				</div>
+
+
+				<div class="option">
+					<p>De 4000 a 6000</p>
+					<input type="radio" name="presupuesto" placeholder="presupuesto" value="medioDinero" id="presupuesto2">
+				</div>
+
+
+
+				<div class="option">
+					<p>De 2000 a 4000</p>
+					<input type="radio" name="presupuesto" placeholder="presupuesto" value="bajoDinero" id="presupuesto1">
+				</div>
+
 			</div>
 
 			<div class="inputClass">
-				<h4>De que calidad quieres la camara?</h4>
+				<h4>Elige el nivel de calidad de  la camara </h4>
 
 				<div class="option">
-					<p>Muy buena calidad</p>
+					<p>Muy buena calidad (Arriba de 12 MPX)</p>
 					<input type="radio" name="camara" placeholder="camara" value="muy buena" id="calidad1">					
 				</div>
 				<div class="option">
-					<p>Buena calidad</p>
+					<p>Buena calidad (Arriba de 10 MPX)</p>
 					<input type="radio" name="camara" placeholder="camara" value="buena" id="calidad2">
 					
 				</div>
 				<div class="option">
-					<p>Calidad regular</p>
+					<p>Calidad regular (Arriba de 8 MPX)</p>
 					<input type="radio" name="camara" placeholder="camara" value="regular" id="calidad3">
 				</div>
 
@@ -47,40 +71,40 @@
 
 			<div class="inputClass">
 
-				<h4>Quieres con mucha memoria ?</h4>
+				<h4>¿Cuanta memoria interna buscas?</h4>
 
 				<div class="option">
-					<p>Mucha memoria</p>
+					<p>Mucha memoria (Arriba de 32 GB)</p>
 					<input type="radio" name="memoria" placeholder="presupuesto" value="alta" id="memoria1">
 				</div>
 
 				<div class="option">
-					<p>Capacidad Media</p>
+					<p>Capacidad Media (Arriba de 16 GB)</p>
 					<input type="radio" name="memoria" placeholder="presupuesto" value="media" id="memoria2">
 				</div>
 
 				<div class="option">
-					<p>Poca memoria</p>
+					<p>Poca memoria (Arriba de 5 GB)</p>
 					<input type="radio" name="memoria" placeholder="presupuesto" value="regular" id="memoria3">
 				</div>
 
 			</div>
 
 			<div class="inputClass">
-				<h4>Cuanto desempeño quieres que tenga?</h4>
+				<h4>¿Cuanto desempeño quieres que tenga?</h4>
 
 				<div class="option">
-					<p>Alto Desempeño</p>
+					<p>Alto Desempeño (Gama alta)</p>
 					<input type="radio" name="desempeño" placeholder="presupuesto" value="alta" id="desempeño1">
 				</div>
 
 				<div class="option">
-					<p>Mediano Desempeño</p>
+					<p>Mediano Desempeño (Gama media)</p>
 					<input type="radio" name="desempeño" placeholder="presupuesto" value="media" id="desempeño2">
 				</div>
 
 				<div class="option">
-					<p>Desempeño Regular</p>
+					<p>Desempeño Regular (Gama baja)</p>
 					<input type="radio" name="desempeño" placeholder="presupuesto" value="baja" id="desempeño3">
 				</div>
 
