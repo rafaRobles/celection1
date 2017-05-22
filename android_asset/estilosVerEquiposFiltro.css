@@ -55,18 +55,18 @@
 .contenido{
 	float: left;
 	position: relative;
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-top: 3%;
 }
 
 .equipo{
 	float: left;
 	position: relative;
-	width: 80%;
-	margin-right: 10%;
-	margin-left: 10%;
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
 	height: 40%;
 	background: #187DC2;
 	margin-top: 3%;
