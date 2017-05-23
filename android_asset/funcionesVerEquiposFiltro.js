@@ -30,6 +30,16 @@ function selectEquipos()
 					console.log(data)
 					var mostrarDatos ="";
 
+					if(data.valores.length == 0)
+					{
+						mostrarDatos += "<h2>Lo sentimos, ningun celular se acopla a tus caracterizticas</h2>"+
+										"<button onclick=redirigir()>Regresar</button>"
+
+					}
+					else
+					{
+
+
 					
 					for (var i = 0; i < data.valores.length; i++)
 					{
@@ -52,9 +62,17 @@ function selectEquipos()
 										'</div>'+	
 									'</div>'		
 					}
+
+					}
 					
 					//console.log(mostrarDatos)
 					document.getElementById('contenido').innerHTML = mostrarDatos
 			}
 		}
+}
+
+
+function redirigir()
+{
+	window.location.assign('formulario.html')
 }

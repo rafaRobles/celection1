@@ -118,3 +118,28 @@
 	color: #D4D4D4;
 
 }
+
+
+.contenido>h2{
+	float: left;
+	position: relative;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.contenido>button{
+	float: left;
+	width: 40%;
+	height: 70%;
+	border-radius: 30px;
+	border:none;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 10%;
+	font-size: 25px;
+	color: #E6F0F6;
+	background: #187DC2;
+}
