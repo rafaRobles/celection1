@@ -32,7 +32,7 @@ function selectEquipos()
 
 					if(data.valores.length == 0)
 					{
-						mostrarDatos += "<h2>Lo sentimos, ningun celular se acopla a tus caracterizticas</h2>"+
+						mostrarDatos += "<h2>Lo sentimos, ningun celular se acopla a tus caracteristicas</h2>"+
 										"<button onclick=redirigir()>Regresar</button>"
 
 					}
